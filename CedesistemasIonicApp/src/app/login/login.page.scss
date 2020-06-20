@@ -1,0 +1,17 @@
+.myContent{
+    position: relative;
+    height: 100%;
+    .myCard{
+        top: 25%;
+        .myLogo{
+            width: 30%;
+            margin: 0 auto;
+            background-color: #ee5253;
+            border-radius: 50%;
+            margin-bottom: 10%;
+        }
+        .myTitle{
+            text-align: center;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.cedesistemas.ionic",
   "appName": "CedesistemasIonicApp",
   "bundledWebRuntime": false,
   "npmClient": "npm",

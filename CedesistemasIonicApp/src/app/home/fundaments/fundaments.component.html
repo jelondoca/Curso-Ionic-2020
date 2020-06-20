@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card>
+      <ion-input clearInput [(ngModel)]='name' placeholder='Nombre'></ion-input>
+      <br>
+      <ion-input clearInput [(ngModel)]='lastName' placeholder='Apellido'></ion-input>
+      <br>
+      <ion-input clearInput type='number' [(ngModel)]='age' placeholder='Edad'></ion-input>
+      <br>
+      <ion-button expand="block" fill="outline" (click)='createStudent()'>Crear estudiante</ion-button>
+    </ion-card>
+
+    <ion-list *ngIf='students.length > 0'>
+      <ion-item *ngFor='let student of students'>
+        <ion-label> {{student.name}} {{student.lastName}} - ({{student.age}})</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
